@@ -14,4 +14,9 @@ public class UsuarioEntity
     public bool CelularValidado { get; set; }
 
     public string Email { get; set; } = default!;
+
+    internal void Atualizar(string nome)
+    {
+        Nome = nome;
+    }
 }

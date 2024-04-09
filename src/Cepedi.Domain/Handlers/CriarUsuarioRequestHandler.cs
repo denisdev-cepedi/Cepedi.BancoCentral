@@ -1,12 +1,14 @@
 ﻿using Cepedi.BancoCentral.Domain.Entities;
 using Cepedi.BancoCentral.Domain.Repository;
+using Cepedi.BancoCentral.Shareable.Enums;
 using Cepedi.Shareable.Requests;
 using Cepedi.Shareable.Responses;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using OperationResult;
 
 namespace Cepedi.BancoCentral.Domain.Handlers;
-public class CriarUsuarioRequestHandler : IRequestHandler<CriarUsuarioRequest, CriarUsuarioResponse>
+public class CriarUsuarioRequestHandler : IRequestHandler<CriarUsuarioRequest, Result<CriarUsuarioResponse>>
 {
     private readonly ILogger<CriarUsuarioRequestHandler> _logger;
     private readonly IUsuarioRepository _usuarioRepository;
@@ -17,7 +19,7 @@ public class CriarUsuarioRequestHandler : IRequestHandler<CriarUsuarioRequest, C
         _logger = logger;
     }
 
-    public async Task<CriarUsuarioResponse> Handle(CriarUsuarioRequest request, CancellationToken cancellationToken)
+    public async Task<Result<CriarUsuarioResponse>> Handle(CriarUsuarioRequest request, CancellationToken cancellationToken)
     {
         try
         {
@@ -33,13 +35,13 @@ public class CriarUsuarioRequestHandler : IRequestHandler<CriarUsuarioRequest, C
 
             await _usuarioRepository.CriarUsuarioAsync(usuario);
 
-            return new CriarUsuarioResponse(usuario.Id, usuario.Nome);
-
+            return Result.Success(new CriarUsuarioResponse(usuario.Id, usuario.Nome));
         }
         catch
         {
             _logger.LogError("Ocorreu um erro durante a execução");
-            throw;
+            return Result.Error<CriarUsuarioResponse>(new Shareable.Exceptions.ApplicationException(
+                (BancoCentralMensagemErrors.ErroGravacaoUsuario)));
         }
     }
 }

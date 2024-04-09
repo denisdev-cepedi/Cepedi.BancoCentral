@@ -7,6 +7,7 @@ using FluentAssertions;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NSubstitute;
+using OperationResult;
 
 namespace Cepedi.BancoCentral.Domain.Tests;
 
@@ -34,10 +35,10 @@ public class CriarUsuarioRequestHandlerTests
         var result = await _sut.Handle(usuario, CancellationToken.None);
 
         //Assert 
-        result.Should().BeOfType<CriarUsuarioResponse>().Which
-            .nome.Should().Be(usuario.Nome);
-        result.Should().BeOfType<CriarUsuarioResponse>().Which
-            .nome.Should().NotBeEmpty();
+        result.Should().BeOfType<Result<CriarUsuarioResponse>>().Which
+            .Value.nome.Should().Be(usuario.Nome);
+        result.Should().BeOfType<Result<CriarUsuarioResponse>>().Which
+            .Value.nome.Should().NotBeEmpty();
     }
 
 }
