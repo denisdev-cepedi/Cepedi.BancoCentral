@@ -34,6 +34,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 - Stuff", "99 - Stuff", 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cepedi.BancoCentral.Benchmark.Test", "src\Cepedi.BancoCentral.Benchmark.Test\Cepedi.BancoCentral.Benchmark.Test.csproj", "{00D40B75-F98D-4C21-8940-F01F75F6781A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cepedi.BancoCentral.Data.Tests", "tests\Cepedi.BancoCentral.Data.Tests\Cepedi.BancoCentral.Data.Tests.csproj", "{385E086A-0B5C-41F0-8B43-7E2247F5EEC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +72,14 @@ Global
 		{67C7491E-768C-4D66-BDE9-331F6C0B5952}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67C7491E-768C-4D66-BDE9-331F6C0B5952}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67C7491E-768C-4D66-BDE9-331F6C0B5952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D40B75-F98D-4C21-8940-F01F75F6781A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D40B75-F98D-4C21-8940-F01F75F6781A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D40B75-F98D-4C21-8940-F01F75F6781A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D40B75-F98D-4C21-8940-F01F75F6781A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{385E086A-0B5C-41F0-8B43-7E2247F5EEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{385E086A-0B5C-41F0-8B43-7E2247F5EEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{385E086A-0B5C-41F0-8B43-7E2247F5EEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{385E086A-0B5C-41F0-8B43-7E2247F5EEC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +92,8 @@ Global
 		{C1615DDC-9BE5-4F7E-B012-8D45CD4D6C3B} = {1631223A-2E69-4D27-82C2-58651840B7EC}
 		{3B6EEBEF-C0AF-4872-BDAC-39163EFE21FA} = {2D4A6734-55E9-46FD-BC86-1A6B9652198C}
 		{67C7491E-768C-4D66-BDE9-331F6C0B5952} = {2D4A6734-55E9-46FD-BC86-1A6B9652198C}
+		{00D40B75-F98D-4C21-8940-F01F75F6781A} = {2D4A6734-55E9-46FD-BC86-1A6B9652198C}
+		{385E086A-0B5C-41F0-8B43-7E2247F5EEC4} = {2D4A6734-55E9-46FD-BC86-1A6B9652198C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18F2618F-D5A0-4779-AB65-8871DF992684}

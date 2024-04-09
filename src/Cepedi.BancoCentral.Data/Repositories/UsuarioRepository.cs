@@ -33,9 +33,14 @@ namespace Cepedi.BancoCentral.Data.Repositories
             return usuario;
         }
 
+        public async Task<List<UsuarioEntity>> GetUsuariosAsync()
+        {
+            return await _context.Usuario.ToListAsync();
+        }
+
         public async Task<UsuarioEntity> ObterUsuarioAsync(int id)
         {
-            return await 
+            return await
                 _context.Usuario.Where(e => e.Id == id).FirstOrDefaultAsync();
         }
     }
