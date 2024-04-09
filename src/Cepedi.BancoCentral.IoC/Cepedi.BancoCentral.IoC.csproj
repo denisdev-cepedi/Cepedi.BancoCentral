@@ -18,9 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cepedi.Data\Cepedi.BancoCentral.Data.csproj" />
-    <ProjectReference Include="..\Cepedi.Domain\Cepedi.BancoCentral.Domain.csproj" />
-    <ProjectReference Include="..\Cepedi.Shareable\Cepedi.BancoCentral.Shareable.csproj" />
+    <ProjectReference Include="..\Cepedi.BancoCentral.Data\Cepedi.BancoCentral.Data.csproj" />
+    <ProjectReference Include="..\Cepedi.BancoCentral.Domain\Cepedi.BancoCentral.Domain.csproj" />
+    <ProjectReference Include="..\Cepedi.BancoCentral.Shareable\Cepedi.BancoCentral.Shareable.csproj" />
   </ItemGroup>
 
 </Project>

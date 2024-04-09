@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cepedi.IoC\Cepedi.BancoCentral.IoC.csproj" />
+    <ProjectReference Include="..\Cepedi.BancoCentral.IoC\Cepedi.BancoCentral.IoC.csproj" />
   </ItemGroup>
 
 </Project>

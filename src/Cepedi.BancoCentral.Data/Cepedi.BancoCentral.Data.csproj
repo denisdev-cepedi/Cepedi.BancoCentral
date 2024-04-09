@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cepedi.Domain\Cepedi.BancoCentral.Domain.csproj" />
+    <ProjectReference Include="..\Cepedi.BancoCentral.Domain\Cepedi.BancoCentral.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -24,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Cepedi.Domain\Cepedi.BancoCentral.Domain.csproj" />
-    <ProjectReference Include="..\..\src\Cepedi.Data\Cepedi.BancoCentral.Data.csproj" />
+    <ProjectReference Include="..\..\src\Cepedi.BancoCentral.Domain\Cepedi.BancoCentral.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Cepedi.BancoCentral.Data\Cepedi.BancoCentral.Data.csproj" />
   </ItemGroup>
 
 </Project>
