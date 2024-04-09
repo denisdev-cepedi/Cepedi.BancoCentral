@@ -477,3 +477,7 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+
+appsettings.json
+/src/Cepedi.WebApi/appsettings.json
