@@ -8,7 +8,8 @@ using Microsoft.Extensions.Logging;
 using OperationResult;
 
 namespace Cepedi.BancoCentral.Domain.Handlers;
-public class CriarUsuarioRequestHandler : IRequestHandler<CriarUsuarioRequest, Result<CriarUsuarioResponse>>
+public class CriarUsuarioRequestHandler 
+    : IRequestHandler<CriarUsuarioRequest, Result<CriarUsuarioResponse>>
 {
     private readonly ILogger<CriarUsuarioRequestHandler> _logger;
     private readonly IUsuarioRepository _usuarioRepository;

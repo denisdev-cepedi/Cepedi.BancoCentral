@@ -17,7 +17,8 @@ namespace Cepedi.BancoCentral.IoC
         public static void ConfigureAppDependencies(this IServiceCollection services, IConfiguration configuration)
         {
             ConfigureDbContext(services, configuration);
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
+            services.AddMediatR(cfg => 
+            cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
             //services.AddMediatR(new[] { typeof(IDomainEntryPoint).Assembly });
 
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();

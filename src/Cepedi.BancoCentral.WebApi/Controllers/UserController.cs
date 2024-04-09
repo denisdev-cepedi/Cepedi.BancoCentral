@@ -31,7 +31,7 @@ public class UserController : BaseController
         [FromBody] CriarUsuarioRequest request) => await SendCommand(request);
 
     [HttpPut]
-    [ProducesResponseType(typeof(CriarUsuarioResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(AtualizarUsuarioResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ResponseErro), StatusCodes.Status400BadRequest)]
     [ProducesResponseType(typeof(ResponseErro), StatusCodes.Status204NoContent)]
     public async Task<ActionResult<AtualizarUsuarioResponse>> AtualizarUsuarioAsync(
