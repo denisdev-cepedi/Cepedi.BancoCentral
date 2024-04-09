@@ -16,8 +16,8 @@ public class UserRepositoryTests
 
         using (var context = new ApplicationDbContext(options))
         {
-            context.Usuario.Add(new UsuarioEntity { Id = 1, Nome = "user1" });
-            context.Usuario.Add(new UsuarioEntity { Id = 2, Nome = "user2" });
+            context.Usuario.Add(new UsuarioEntity { Id = 1, Nome = "user1", Celular = "7199999999", Email = "teste", Cpf = "1235567789" });
+            context.Usuario.Add(new UsuarioEntity { Id = 2, Nome = "user2", Celular = "7199999999", Email = "teste", Cpf = "1235567789" });
             context.SaveChanges();
         }
 
