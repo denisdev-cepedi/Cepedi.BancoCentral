@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Denis Vieira",
+    "classifications": [ "CepediClean", "Cepedi", "CepediCleanArch" ],
+    "identity": "Cepedi.CleanArch.Solution.CSharp",
+    "name": "Cepedi CleanArch",
+    "shortName": "cepedi",
+    "sourceName": "Cepedi.CleanArch",
+    "groupIdentity": "Cepedi.CleanArchitecture",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }
+  }
