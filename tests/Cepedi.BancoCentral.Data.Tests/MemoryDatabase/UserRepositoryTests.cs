@@ -1,8 +1,8 @@
-using Cepedi.BancoCentral.Data.Repositories;
-using Cepedi.BancoCentral.Domain.Entities;
+using Cepedi.BancoCentral.Dominio.Entidades;
+using Cepedi.BancoCentral.Performance.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace Cepedi.BancoCentral.Data.Tests.MemoryDatabase;
+namespace Cepedi.BancoCentral.Performance.Tests.MemoryDatabase;
 
 public class UserRepositoryTests
 {

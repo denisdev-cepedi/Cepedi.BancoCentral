@@ -1,6 +1,6 @@
-﻿using Cepedi.BancoCentral.Domain.Entities;
-using Cepedi.BancoCentral.Domain.Handlers;
-using Cepedi.BancoCentral.Domain.Repository;
+﻿using Cepedi.BancoCentral.Dominio.Entidades;
+using Cepedi.BancoCentral.Dominio.Handlers;
+using Cepedi.BancoCentral.Dominio.Repositorio;
 using Cepedi.Shareable.Requests;
 using Cepedi.Shareable.Responses;
 using FluentAssertions;
@@ -9,7 +9,7 @@ using Moq;
 using NSubstitute;
 using OperationResult;
 
-namespace Cepedi.BancoCentral.Domain.Tests;
+namespace Cepedi.BancoCentral.Dominio.Tests;
 
 public class AtualizarUsuarioRequestHandlerTests
 {

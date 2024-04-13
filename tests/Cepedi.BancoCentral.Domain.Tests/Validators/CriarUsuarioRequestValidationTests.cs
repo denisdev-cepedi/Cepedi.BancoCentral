@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Cepedi.BancoCentral.Shareable.Requests;
+using Cepedi.BancoCentral.Compartilhado.Requests;
 using Cepedi.Shareable.Requests;
 using FluentAssertions;
 
-namespace Cepedi.BancoCentral.Domain.Tests.Validators;
+namespace Cepedi.BancoCentral.Dominio.Tests.Validators;
 public class CriarUsuarioRequestValidationTests
 {
     private readonly CriarUsuarioRequestValidation _sut;

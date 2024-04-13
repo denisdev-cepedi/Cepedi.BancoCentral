@@ -1,4 +1,4 @@
-﻿using Cepedi.BancoCentral.WebApi.Controllers;
+﻿using Cepedi.BancoCentral.Api.Controllers;
 using Cepedi.Shareable.Requests;
 using Cepedi.Shareable.Responses;
 using FluentAssertions;
@@ -8,7 +8,7 @@ using Moq;
 using NSubstitute;
 using OperationResult;
 
-namespace Cepedi.BancoCentral.WebApi.Tests
+namespace Cepedi.BancoCentral.Api.Tests
 {
     public class UserControllerTests
     {

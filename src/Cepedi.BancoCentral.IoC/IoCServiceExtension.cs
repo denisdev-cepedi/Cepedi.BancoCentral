@@ -1,10 +1,9 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using Cepedi.BancoCentral.Data;
-using Cepedi.BancoCentral.Data.Repositories;
-using Cepedi.BancoCentral.Domain.Handlers.Pipelines;
-using Cepedi.BancoCentral.Domain.Repository;
-using Cepedi.BancoCentral.Shareable;
-using Cepedi.BancoCentral.Shareable.Middleware;
+using Cepedi.BancoCentral.Compartilhado;
+using Cepedi.BancoCentral.Dominio.Handlers.Pipelines;
+using Cepedi.BancoCentral.Dominio.Repositorio;
+using Cepedi.BancoCentral.Performance;
+using Cepedi.BancoCentral.Performance.Repositories;
 using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
