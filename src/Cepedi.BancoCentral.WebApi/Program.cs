@@ -1,6 +1,6 @@
-using Serilog;
 using Cepedi.BancoCentral.IoC;
-using Cepedi.BancoCentral.WebApi;
+using Cepedi.BancoCentral.Shareable.Middleware;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,13 +24,14 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    await app.InitialiseDatabaseAsync();
+   //await app.InitialiseDatabaseAsync();
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
 app.UseHealthChecks("/health");
 app.UseHttpsRedirection();
+//app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseAuthorization();
 

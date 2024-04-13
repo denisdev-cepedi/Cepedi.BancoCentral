@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.WebApi", "src\Cepedi.BancoCentral.WebApi\Cepedi.BancoCentral.WebApi.csproj", "{1A8B3488-593D-46EB-9144-2084A5A6B36B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Api", "src\Cepedi.BancoCentral.WebApi\Cepedi.BancoCentral.Api.csproj", "{1A8B3488-593D-46EB-9144-2084A5A6B36B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{CFD3F850-D3B6-4C8A-817C-D7FDBF68AC4D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Apresentacao", "01 - Apresentacao", "{CFD3F850-D3B6-4C8A-817C-D7FDBF68AC4D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Domain", "02 - Domain", "{F8B9242E-78C6-4237-AA1C-5100A0276BF6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Dominio", "02 - Dominio", "{F8B9242E-78C6-4237-AA1C-5100A0276BF6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Domain", "src\Cepedi.BancoCentral.Domain\Cepedi.BancoCentral.Domain.csproj", "{DF41C092-957E-4955-A189-A7D348AB05A3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Infra", "03 - Infra", "{73346350-30C0-4828-8EF9-4A2D5DF2A8C6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Infraestrutura", "03 - Infraestrutura", "{73346350-30C0-4828-8EF9-4A2D5DF2A8C6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Data", "src\Cepedi.BancoCentral.Data\Cepedi.BancoCentral.Data.csproj", "{09DDC372-9FA9-4443-809E-081937E8BD8C}"
 EndProject
@@ -21,22 +21,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.IoC", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Shareable", "src\Cepedi.BancoCentral.Shareable\Cepedi.BancoCentral.Shareable.csproj", "{C1615DDC-9BE5-4F7E-B012-8D45CD4D6C3B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "98 - Tests", "98 - Tests", "{2D4A6734-55E9-46FD-BC86-1A6B9652198C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Tests", "06 - Tests", "{2D4A6734-55E9-46FD-BC86-1A6B9652198C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.WebApi.Tests", "tests\Cepedi.BancoCentral.Api.Tests\Cepedi.BancoCentral.WebApi.Tests.csproj", "{3B6EEBEF-C0AF-4872-BDAC-39163EFE21FA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Domain.Tests", "tests\Cepedi.BancoCentral.Domain.Tests\Cepedi.BancoCentral.Domain.Tests.csproj", "{67C7491E-768C-4D66-BDE9-331F6C0B5952}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 - Stuff", "99 - Stuff", "{083535C5-41AC-4FF7-83DA-B0034E46A0F9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 - Itens", "07 - Itens", "{083535C5-41AC-4FF7-83DA-B0034E46A0F9}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cepedi.BancoCentral.Benchmark.Test", "src\Cepedi.BancoCentral.Benchmark.Test\Cepedi.BancoCentral.Benchmark.Test.csproj", "{00D40B75-F98D-4C21-8940-F01F75F6781A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Benchmark.Test", "src\Cepedi.BancoCentral.Benchmark.Test\Cepedi.BancoCentral.Benchmark.Test.csproj", "{00D40B75-F98D-4C21-8940-F01F75F6781A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cepedi.BancoCentral.Data.Tests", "tests\Cepedi.BancoCentral.Data.Tests\Cepedi.BancoCentral.Data.Tests.csproj", "{385E086A-0B5C-41F0-8B43-7E2247F5EEC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Data.Tests", "tests\Cepedi.BancoCentral.Data.Tests\Cepedi.BancoCentral.Data.Tests.csproj", "{385E086A-0B5C-41F0-8B43-7E2247F5EEC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

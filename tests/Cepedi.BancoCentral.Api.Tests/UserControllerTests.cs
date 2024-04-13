@@ -1,6 +1,7 @@
 ﻿using Cepedi.BancoCentral.WebApi.Controllers;
 using Cepedi.Shareable.Requests;
 using Cepedi.Shareable.Responses;
+using FluentAssertions;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Moq;

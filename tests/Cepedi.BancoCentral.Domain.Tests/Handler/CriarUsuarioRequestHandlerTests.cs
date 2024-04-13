@@ -4,6 +4,7 @@ using Cepedi.BancoCentral.Domain.Repository;
 using Cepedi.Shareable.Requests;
 using Cepedi.Shareable.Responses;
 using FluentAssertions;
+using FluentValidation;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NSubstitute;
@@ -17,7 +18,7 @@ public class CriarUsuarioRequestHandlerTests
     Substitute.For<IUsuarioRepository>();
     private readonly ILogger<CriarUsuarioRequestHandler> _logger = Substitute.For<ILogger<CriarUsuarioRequestHandler>>();
     private readonly CriarUsuarioRequestHandler _sut;
-
+    
     public CriarUsuarioRequestHandlerTests()
     {
         _sut = new CriarUsuarioRequestHandler(_usuarioRepository, _logger);

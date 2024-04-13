@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Cepedi.BancoCentral.WebApi\Cepedi.BancoCentral.WebApi.csproj" />
+    <ProjectReference Include="..\..\src\Cepedi.BancoCentral.WebApi\Cepedi.BancoCentral.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>

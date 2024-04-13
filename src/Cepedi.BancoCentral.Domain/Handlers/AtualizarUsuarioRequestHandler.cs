@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Cepedi.BancoCentral.Domain.Repository;
 using Cepedi.Shareable.Requests;
 using Cepedi.Shareable.Responses;
+using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using OperationResult;
@@ -16,6 +17,7 @@ public class AtualizarUsuarioRequestHandler :
 {
     private readonly IUsuarioRepository _usuarioRepository;
     private readonly ILogger<AtualizarUsuarioRequestHandler> _logger;
+    
 
     public AtualizarUsuarioRequestHandler(IUsuarioRepository usuarioRepository, ILogger<AtualizarUsuarioRequestHandler> logger)
     {

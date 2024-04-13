@@ -1,4 +1,4 @@
 ﻿namespace Cepedi.BancoCentral.Domain;
-public class IDomainEntryPoint
+public class EntryPoint
 {
 }

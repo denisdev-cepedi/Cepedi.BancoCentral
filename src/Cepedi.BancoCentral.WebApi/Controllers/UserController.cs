@@ -4,25 +4,23 @@ using Cepedi.Shareable.Exceptions;
 using Cepedi.Shareable.Requests;
 using Cepedi.Shareable.Responses;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Cepedi.BancoCentral.WebApi.Controllers;
+namespace Cepedi.BancoCentral.Api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
 public class UserController : BaseController
 {
     private readonly ILogger<UserController> _logger;
-    private readonly IMediator _mediator;
 
     public UserController(
         ILogger<UserController> logger, IMediator mediator)
         : base(mediator)
     {
         _logger = logger;
-        _mediator = mediator;
     }
-
 
     [HttpPost]
     [ProducesResponseType(typeof(CriarUsuarioResponse), StatusCodes.Status200OK)]
