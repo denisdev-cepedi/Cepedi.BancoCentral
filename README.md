@@ -1,6 +1,6 @@
 # Cepedi.CleanArch
 
-Executar o projeto `src\Cepedi.BancoCentral.WebApi` para abrir o swagger
+Executar o projeto `src\Cepedi.BancoCentral.Api` para abrir o swagger
 
 ## Características do projeto
 
@@ -9,13 +9,13 @@ Executar o projeto `src\Cepedi.BancoCentral.WebApi` para abrir o swagger
 - Projeto base para a trilha avançada de .net da residência TIC18. A Residência TIC18 é um projeto oferecido pela parceria entre a Uesc e o Cepedi, localizado em Ilhéus-BA.
 
 ## Aplicar migrations
- dotnet ef migrations add Init --project .\src\Cepedi.BancoCentral.Performance\ -s .\src\Cepedi.BancoCentral.WebApi\
+ dotnet ef migrations add Init --project .\src\Cepedi.BancoCentral.Dados\ -s .\src\Cepedi.BancoCentral.Api\
 
 # Remove a última migration aplicada
- dotnet ef migrations remove --project .\src\Cepedi.BancoCentral.Performance\ -s .\src\Cepedi.BancoCentral.WebApi\
+ dotnet ef migrations remove --project .\src\Cepedi.BancoCentral.Dados\ -s .\src\Cepedi.BancoCentral.Api\
 
 # Gera o script de migração
- dotnet ef migrations script --project .\src\Cepedi.BancoCentral.Performance\ -s .\src\Cepedi.BancoCentral.WebApi\
+ dotnet ef migrations script --project .\src\Cepedi.BancoCentral.Dados\ -s .\src\Cepedi.BancoCentral.Api\
 
 # Coloca o banco para o estado inicial zero
- dotnet ef migrations update 0 --project .\src\Cepedi.BancoCentral.Performance\ -s .\src\Cepedi.BancoCentral.WebApi\
+ dotnet ef migrations update 0 --project .\src\Cepedi.BancoCentral.Dados\ -s .\src\Cepedi.BancoCentral.Api\

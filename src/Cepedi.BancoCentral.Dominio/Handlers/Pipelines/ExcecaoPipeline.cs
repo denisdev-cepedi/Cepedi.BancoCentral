@@ -4,12 +4,12 @@ using Microsoft.Extensions.Logging;
 using OperationResult;
 
 namespace Cepedi.BancoCentral.Dominio.Handlers.Pipelines;
-public sealed class ExceptionHandlingPipeline<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+public sealed class ExcecaoPipeline<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     where TRequest : notnull
 {
-    private readonly ILogger<ExceptionHandlingPipeline<TRequest, TResponse>> _logger;
+    private readonly ILogger<ExcecaoPipeline<TRequest, TResponse>> _logger;
     
-    public ExceptionHandlingPipeline(ILogger<ExceptionHandlingPipeline<TRequest, TResponse>> logger)
+    public ExcecaoPipeline(ILogger<ExcecaoPipeline<TRequest, TResponse>> logger)
     {
         _logger = logger;
     }

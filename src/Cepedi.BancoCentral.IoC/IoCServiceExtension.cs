@@ -21,7 +21,7 @@ namespace Cepedi.BancoCentral.IoC
             services.AddMediatR(config =>
                      config.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies())
             );
-            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ExceptionHandlingPipeline<,>));
+            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ExcecaoPipeline<,>));
             services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
             //services.AddTransient<ExceptionHandlingMiddleware>();
