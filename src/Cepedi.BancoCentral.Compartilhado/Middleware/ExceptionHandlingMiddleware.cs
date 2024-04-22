@@ -38,20 +38,20 @@ public sealed class ExceptionHandlingMiddleware : IMiddleware
     private static int GetStatusCode(Exception exception) =>
         exception switch
         {
-            RequestInvalidaException => StatusCodes.Status422UnprocessableEntity,
-            SemResultadosException => StatusCodes.Status204NoContent,
+            RequestInvalidaExcecao => StatusCodes.Status422UnprocessableEntity,
+            SemResultadosExcecao => StatusCodes.Status204NoContent,
             _ => StatusCodes.Status500InternalServerError
         };
     private static string GetTitle(Exception exception) =>
         exception switch
         {
-            Compartilhado.Exceptions.ApplicationException applicationException => applicationException.ResponseErro.Titulo,
+            Compartilhado.Exceptions.ExcecaoAplicacao applicationException => applicationException.ResponseErro.Titulo,
             _ => "Server Error"
         };
     private static IEnumerable<string> GetErrors(Exception exception)
     {
         IEnumerable<string> errors = null;
-        if (exception is RequestInvalidaException validationException)
+        if (exception is RequestInvalidaExcecao validationException)
         {
             errors = validationException!.Erros;
         }

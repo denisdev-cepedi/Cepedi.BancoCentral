@@ -1,9 +1,9 @@
 ﻿using Cepedi.BancoCentral.Compartilhado.Enums;
 
 namespace Cepedi.BancoCentral.Compartilhado.Exceptions;
-public class SemResultadosException : ApplicationException
+public class SemResultadosExcecao : ExcecaoAplicacao
 {
-    public SemResultadosException() : 
+    public SemResultadosExcecao() : 
         base(BancoCentralMensagemErrors.SemResultados)
     {
     }

@@ -2,7 +2,7 @@
 using Cepedi.BancoCentral.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
 
-namespace Cepedi.BancoCentral.Performance;
+namespace Cepedi.BancoCentral.Dados;
 
 [ExcludeFromCodeCoverage]
 public class ApplicationDbContext : DbContext

@@ -1,4 +1,4 @@
-﻿using Cepedi.Shareable.Exceptions;
+﻿using Cepedi.BancoCentral.Compartilhado.Excecoes;
 using Cepedi.Shareable.Requests;
 using Cepedi.Shareable.Responses;
 using MediatR;
@@ -21,14 +21,14 @@ public class UserController : BaseController
 
     [HttpPost]
     [ProducesResponseType(typeof(CriarUsuarioResponse), StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(ResponseErro), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ResultadoErro), StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<CriarUsuarioResponse>> CriarUsuarioAsync(
         [FromBody] CriarUsuarioRequest request) => await EnviarCommand(request);
 
     [HttpPut]
     [ProducesResponseType(typeof(AtualizarUsuarioResponse), StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(ResponseErro), StatusCodes.Status400BadRequest)]
-    [ProducesResponseType(typeof(ResponseErro), StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResultadoErro), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ResultadoErro), StatusCodes.Status204NoContent)]
     public async Task<ActionResult<AtualizarUsuarioResponse>> AtualizarUsuarioAsync(
         [FromBody] AtualizarUsuarioRequest request) => await EnviarCommand(request);
 

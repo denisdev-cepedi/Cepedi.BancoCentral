@@ -1,9 +1,9 @@
 ﻿using Cepedi.BancoCentral.Compartilhado.Enums;
 
 namespace Cepedi.BancoCentral.Compartilhado.Exceptions;
-public class RequestInvalidaException : ApplicationException
+public class RequestInvalidaExcecao : ExcecaoAplicacao
 {
-    public RequestInvalidaException(IDictionary<string, string[]> erros)
+    public RequestInvalidaExcecao(IDictionary<string, string[]> erros)
         : base(BancoCentralMensagemErrors.DadosInvalidos) => 
         Erros = erros.Select(e => $"{e.Key}: {string.Join(", ", e.Value)}");
 

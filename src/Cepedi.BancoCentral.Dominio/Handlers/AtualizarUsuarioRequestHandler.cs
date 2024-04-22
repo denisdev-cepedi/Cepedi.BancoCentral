@@ -28,7 +28,7 @@ public class AtualizarUsuarioRequestHandler :
             if (usuarioEntity == null)
             {
                 return Result.Error<AtualizarUsuarioResponse>(new 
-                    Compartilhado.Exceptions.SemResultadosException());
+                    Compartilhado.Exceptions.SemResultadosExcecao());
             }
 
             usuarioEntity.Atualizar(request.Nome);

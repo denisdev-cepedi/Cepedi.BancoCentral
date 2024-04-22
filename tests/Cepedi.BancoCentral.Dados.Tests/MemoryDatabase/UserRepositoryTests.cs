@@ -1,6 +1,7 @@
 using Cepedi.BancoCentral.Dominio.Entidades;
-using Cepedi.BancoCentral.Performance.Repositories;
+using Cepedi.BancoCentral.Dados.Repositorios;
 using Microsoft.EntityFrameworkCore;
+using Cepedi.BancoCentral.Dados;
 
 namespace Cepedi.BancoCentral.Performance.Tests.MemoryDatabase;
 

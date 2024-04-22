@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Cepedi.BancoCentral.Performance.EntityTypeConfiguration;
+namespace Cepedi.BancoCentral.Dados.EntityTypeConfiguration;
 public class UsuarioEntityTypeConfiguration : IEntityTypeConfiguration<UsuarioEntity>
 {
     public void Configure(EntityTypeBuilder<UsuarioEntity> builder)

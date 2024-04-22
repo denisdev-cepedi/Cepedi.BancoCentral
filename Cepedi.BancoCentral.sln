@@ -30,7 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 - Itens", "07 - Itens", 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Benchmark.Test", "src\Cepedi.BancoCentral.Performance.Test\Cepedi.BancoCentral.Benchmark.Test.csproj", "{00D40B75-F98D-4C21-8940-F01F75F6781A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Performance.Test", "src\Cepedi.BancoCentral.Performance.Test\Cepedi.BancoCentral.Performance.Test.csproj", "{00D40B75-F98D-4C21-8940-F01F75F6781A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Dados.Tests", "tests\Cepedi.BancoCentral.Data.Tests\Cepedi.BancoCentral.Dados.Tests.csproj", "{385E086A-0B5C-41F0-8B43-7E2247F5EEC4}"
 EndProject

@@ -1,6 +1,6 @@
 ﻿using Cepedi.BancoCentral.Compartilhado.Enums;
 using Cepedi.BancoCentral.Compartilhado.Exceptions;
-using Cepedi.Shareable.Exceptions;
+using Cepedi.BancoCentral.Compartilhado.Excecoes;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using OperationResult;
@@ -38,12 +38,12 @@ public class BaseController : ControllerBase
 
     protected ActionResult ManipularErro(Exception error) => error switch
     {
-        RequestInvalidaException e => BadRequest(FormatarMensagem(e.ResponseErro, e.Erros)),
-        SemResultadosException e => NoContent(),
+        RequestInvalidaExcecao e => BadRequest(FormatarMensagem(e.ResponseErro, e.Erros)),
+        SemResultadosExcecao e => NoContent(),
         _ => BadRequest(FormatarMensagem(BancoCentralMensagemErrors.Generico))
     };
 
-    private ResponseErro FormatarMensagem(ResponseErro responseErro, IEnumerable<string>? errors = null)
+    private ResultadoErro FormatarMensagem(ResultadoErro responseErro, IEnumerable<string>? errors = null)
     {
         if (errors != null)
         {

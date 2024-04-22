@@ -1,9 +1,9 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Cepedi.BancoCentral.Compartilhado;
+using Cepedi.BancoCentral.Dados;
+using Cepedi.BancoCentral.Dados.Repositorios;
 using Cepedi.BancoCentral.Dominio.Handlers.Pipelines;
 using Cepedi.BancoCentral.Dominio.Repositorio;
-using Cepedi.BancoCentral.Performance;
-using Cepedi.BancoCentral.Performance.Repositories;
 using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +22,7 @@ namespace Cepedi.BancoCentral.IoC
                      config.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies())
             );
             services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ExcecaoPipeline<,>));
-            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidacaoComportamento<,>));
 
             //services.AddTransient<ExceptionHandlingMiddleware>();
             //services.AddValidatorsFromAssembly(typeof(EntryPoint).Assembly);

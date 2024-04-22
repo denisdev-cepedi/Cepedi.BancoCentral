@@ -2,7 +2,7 @@ using Cepedi.BancoCentral.Dominio.Entidades;
 using Cepedi.BancoCentral.Dominio.Repositorio;
 using Microsoft.EntityFrameworkCore;
 
-namespace Cepedi.BancoCentral.Performance.Repositories
+namespace Cepedi.BancoCentral.Dados.Repositorios
 {
     public class UsuarioRepository : IUsuarioRepository
     {
