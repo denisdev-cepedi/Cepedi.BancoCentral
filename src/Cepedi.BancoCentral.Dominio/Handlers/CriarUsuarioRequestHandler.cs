@@ -1,5 +1,6 @@
 ﻿using Cepedi.BancoCentral.Dominio.Entidades;
 using Cepedi.BancoCentral.Dominio.Repositorio;
+using Cepedi.BancoCentral.Dominio.Servicos.RabbitMQ;
 using Cepedi.Shareable.Requests;
 using Cepedi.Shareable.Responses;
 using MediatR;
@@ -13,9 +14,9 @@ public class CriarUsuarioRequestHandler
     private readonly ILogger<CriarUsuarioRequestHandler> _logger;
     private readonly IUsuarioRepository _usuarioRepository;
 
-    public CriarUsuarioRequestHandler(IUsuarioRepository usuarioRepository,
-        ILogger<CriarUsuarioRequestHandler> logger
-        )
+    public CriarUsuarioRequestHandler(
+        IUsuarioRepository usuarioRepository,
+        ILogger<CriarUsuarioRequestHandler> logger)
     {
         _usuarioRepository = usuarioRepository;
         _logger = logger;

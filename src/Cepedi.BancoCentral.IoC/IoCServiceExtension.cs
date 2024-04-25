@@ -38,7 +38,7 @@ namespace Cepedi.BancoCentral.IoC
         private static void ConfigurarFluentValidation(IServiceCollection services)
         {
             var abstractValidator = typeof(AbstractValidator<>);
-            var validadores = typeof(QualquerCoisa)
+            var validadores = typeof(IValida)
                 .Assembly
                 .DefinedTypes
                 .Where(type => type.BaseType?.IsGenericType is true &&
@@ -51,6 +51,7 @@ namespace Cepedi.BancoCentral.IoC
             {
                 services.AddSingleton(validator!.GetType().BaseType!, validator);
             }
+
         }
 
         private static void ConfigureDbContext(IServiceCollection services, IConfiguration configuration)

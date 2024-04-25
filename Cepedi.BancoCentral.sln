@@ -38,6 +38,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Dominio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.Compartilhado", "src\Cepedi.BancoCentral.Compartilhado\Cepedi.BancoCentral.Compartilhado.csproj", "{3ED97A03-5EA2-44E5-81ED-004170AFF3A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cepedi.BancoCentral.RabbitMQ", "src\Cepedi.BancoCentral.RabbitMQ\Cepedi.BancoCentral.RabbitMQ.csproj", "{68883227-8A91-4FBF-8D7C-4BB94AF029E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cepedi.BancoCentral.ServiceWorker", "src\Cepedi.BancoCentral.ServiceWorker\Cepedi.BancoCentral.ServiceWorker.csproj", "{0A8F62C0-0B17-4B23-B956-A2FB21DF71FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +84,14 @@ Global
 		{3ED97A03-5EA2-44E5-81ED-004170AFF3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ED97A03-5EA2-44E5-81ED-004170AFF3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ED97A03-5EA2-44E5-81ED-004170AFF3A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68883227-8A91-4FBF-8D7C-4BB94AF029E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68883227-8A91-4FBF-8D7C-4BB94AF029E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68883227-8A91-4FBF-8D7C-4BB94AF029E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68883227-8A91-4FBF-8D7C-4BB94AF029E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8F62C0-0B17-4B23-B956-A2FB21DF71FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8F62C0-0B17-4B23-B956-A2FB21DF71FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8F62C0-0B17-4B23-B956-A2FB21DF71FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8F62C0-0B17-4B23-B956-A2FB21DF71FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +106,8 @@ Global
 		{385E086A-0B5C-41F0-8B43-7E2247F5EEC4} = {2D4A6734-55E9-46FD-BC86-1A6B9652198C}
 		{6859FA97-73E3-465B-BBA7-CD05E5FDBF40} = {F8B9242E-78C6-4237-AA1C-5100A0276BF6}
 		{3ED97A03-5EA2-44E5-81ED-004170AFF3A1} = {1631223A-2E69-4D27-82C2-58651840B7EC}
+		{68883227-8A91-4FBF-8D7C-4BB94AF029E0} = {1631223A-2E69-4D27-82C2-58651840B7EC}
+		{0A8F62C0-0B17-4B23-B956-A2FB21DF71FE} = {CFD3F850-D3B6-4C8A-817C-D7FDBF68AC4D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {18F2618F-D5A0-4779-AB65-8871DF992684}
